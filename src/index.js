@@ -325,6 +325,8 @@ app.use('/graphql', graphqlHTTP({
     schema: schema,
     graphiql: true
 }));
+// const functions = require('firebase-functions');
+// exports.app = functions.https.onRequest(app);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
